@@ -1,0 +1,158 @@
+body {
+    font-family: sans-serif;
+    background-color: #000029;
+    color: white;
+}
+
+.carouselImg {
+    width: 100%;
+}
+
+.headerIcon {
+    max-width: 40%;
+    float: left;
+}
+
+.slideImg {
+    width: 100%;
+}
+    
+.eventsMini {
+    border: 1px solid #ddd;
+    width: 450px;
+    margin: 0px;
+    min-width: 300px;
+    background: #ddd;
+}
+
+.eventsBody {
+    text-decoration: none;
+    list-style: square;
+    font-size: 1em;
+    line-height: 0.6;
+}
+
+.eventsList {
+    list-style-type: none;
+}
+
+.eventsBody h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+a.eventsTransition {
+    text-decoration: none;
+    color: #181718;
+}
+
+a:hover.eventsTransition {
+    transition: all 0.3s ease;
+    opacity: .7;
+    color: #00f;
+}
+
+a:hover.eventsTransition .eventsMiniTitle {
+    transition: all 0.3s ease;
+    transform: translate(5%,0);
+}
+
+.eventsBody {
+    position: relative;
+}
+
+.eventsList li:last-child {
+    border: 0;
+}
+
+.eventsMiniDate {
+    position: relative;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 55px;
+    font-size: 1.em;
+    width: auto;
+    display: block;
+    background: #71f;
+    color: #fff;
+    border-radius: 8px;
+    padding: 2px 15px;
+    text-transform:uppercase;
+    border-bottom: 2px solid #777474;
+}
+
+.eventsHead{
+    font-size: 2em;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+.indexDesc {
+    text-align: center;
+    color: white;
+}
+
+.aboutText {
+    color: white;
+}
+
+.aboutBanner {
+    height: 100%;
+}
+
+.formAlign {
+	margin: 0 auto;
+}
+
+.formLabel {
+	text-align: right;
+	float: left;
+}
+
+.formTextbox {
+	text-align: left;
+	float: right;
+}
+
+.errorMessage{
+	color: #ff0000;
+}
+
+.newsArticle {
+    background-color: white;
+    color: black
+}
+
+.newsBody {
+    text-align: center;
+}
+
+/*Copied CSS for Social Media Icons from: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}

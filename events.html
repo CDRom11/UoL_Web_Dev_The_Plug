@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon-32x32.png">
+    
+
+    <title>The Plug - Home</title>
+    
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Calender CSS -->
+    <link href='calender/fullcalendar/packages/core/main.css' rel='stylesheet' />
+    <link href='calender/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    
+    <!-- Calender JavaScript -->
+    <script src='calender/fullcalendar/packages/core/main.js'></script>
+    <script src='calender/fullcalendar/packages/interaction/main.js'></script>
+    <script src='calender/fullcalendar/packages/daygrid/main.js'></script>
+
+</head>
+    
+    
+<body>
+    <section id="header">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark static-top">
+            <div class="container-fluid">
+                <a href="index.html"><img class= "headerIcon" src="images/icon192x192.png" title="Great Gaming Lounge Icon"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="events.html">Events</a>
+                            <span class="sr-only">(current)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    
+    <section="CalenderEvents">
+        <div class="content">
+            <div id='calendar'></div>
+        </div>
+    
+    
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src='fullcalendar/packages/core/main.js'></script>
+        <script src='fullcalendar/packages/interaction/main.js'></script>
+        <script src='fullcalendar/packages/daygrid/main.js'></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+              plugins: [ 'interaction', 'dayGrid' ],
+              defaultDate: '2022-09-05',
+              editable: true,
+              eventLimit: true, // allow "more" link when too many events
+              events: [
+                {
+                  title: 'September Smash',
+                  start: '2022-09-09'
+                },
+                {
+                  groupId: 999,
+                  title: 'Apex Primes Monthly',
+                  start: '2022-09-12'
+                },
+              ]
+            });
+
+            calendar.render();
+            });
+
+        </script>
+    </section>
+    
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <p class="m-0 text-center text-white">Copyright &copy; The Great Gaming Lounge</p>
+                </div>
+                <div class="col-lg-6"></div>
+                <div class="col-lg-2">
+                    <a href="https://www.facebook.com/TheGreatGamingLounge" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/ggloungett_2017/" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
